@@ -1,30 +1,25 @@
 <!-- 
-HTML Template Merger - Merge your qrcode quicker.
-Released under GNU General Public License v3.0. Opensourced. (https://github.com/hifocus/merger)
-Author @hifocus (https://github.com/hifocus), @LF112 (https://github.com/lf112)
-Copyright reservation is required.
-
-HTML Templete Grouper - The Best Way To Share Your Chatting Group To The Public. 
-GitHub: [https:/github.com/hifocus/Grouper] , Released Under MIT Lisence 
-Original Version: [https://i.chainwon.com/946.html] 
-Modified By Huangxin [https://www.hxis.me] on Aug 29th 2018, great thanks to @Dreamer-Paul
-Please DO NOT Remove Any Of The Copyright Information
+更快地合并你的二维码,实现：支付宝、微信、QQ、PayPal 一码支付！
+演示站点：http://t.cn/EG2f8RE
+设计原有：
+    在中国，我们使用最少三个不同的应用去支付，他们都使用不同的二维码。
+这是一个问题，因为当你很忙的时候你可能把事情搞砸。为什么不把他们合并成一个呢？
+加上奇妙的样式以后，所有人都会喜欢它的！还有...变得更加国际化一点？
  -->
 
+ <!--  -->
+ 
+ 
  <!DOCTYPE html>
  <html lang="zh">
  
  <head>
-     <title>三码合一，便捷支付</title>
+     <title>三码合一，便捷支付</title> <!--  【title】里面输入网站标题-->
      <meta charset="utf-8">
      <meta name="author" content="Huangxin, LF112" />
      <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
      <meta http-equiv="x-dns-prefetch-control" content="on">
      <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
-     <meta name="Keywords" content="Merger,open source,hxco,hifocus,merge qrcode,qrcode" />
-     <meta name="Description" content="Merger is the most simple way to merge your qrcode together." />
-     <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/picturepan2/spectre@0.5.3/dist/spectre.min.css" integrity="sha256-eBag0DNksOEjebVrDSBxOYWaIsRA5RBzz/PWQtkgmvM=" crossorigin="anonymous"> -->
-     <!-- <link rel="stylesheet" href="elements/style.min.css"> -->
      <link rel="stylesheet" href="https://cdn.jsdelivr.net/combine/gh/picturepan2/spectre@0.5.7/dist/spectre.min.css,gh/hifocus/merger@0.11/elements/style.min.css">
      <link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
      <link rel="dns-prefetch" href="https://www.zhihu.com">
@@ -38,17 +33,17 @@ Please DO NOT Remove Any Of The Copyright Information
          // Replace with your own qrcode (or paypal) links.
          // If you don't have a Paypal account, or don't want to use it here, comment out (or just delete) the `var paypal = "xxx" part` ↓.
  
-         var wechat = "wxp://f2f0KGAHkUFJFLqohQmrK84BB4tGmSMcX-xY";
-         var alipay = "https://qr.alipay.com/FKX066230EKXSC3NFHNI9A";
-         var tenpay = "https://i.qianbao.qq.com/wallet/sqrcode.htm?m=tenpay&a=1&u=93663079&ac=802B3FD44ED68531E58D0CBDDBB08986ED4EB41202FA78185E25A6B5387A1646&n=FallinOut&f=wallet";
-         var paypal = "https://paypal.me/fallinout";
+         var wechat = "wxp://f2f0KGAHkUFJFLqohQmrK84BB4tGmSMcX-xY";   <!-- WeChat代表微信收钱码  -->
+         var alipay = "https://qr.alipay.com/FKX066230EKXSC3NFHNI9A";   <!-- alipay代表支付宝收钱码 -->
+         var tenpay = "https://i.qianbao.qq.com/wallet/sqrcode.htm?m=tenpay&a=1&u=93663079&ac=802B3FD44ED68531E58D0CBDDBB08986ED4EB41202FA78185E25A6B5387A1646&n=FallinOut&f=wallet";   <!-- tenpay代表QQ收钱码 -->
+         var paypal = "https://paypal.me/fallinout";   <!-- 注意：没有paypal请删除。 -->
  
          // Replace with your id and profile photo link ↓.
-         var myname = "阿桂";
-         var profile ="http://fallin.pw/mypay/touxiang.jpg";
+         var myname = "阿桂";   <!-- 网站内的提示语句: 您正在向：XX 付款  -->
+         var profile ="http://m.qpic.cn/psb?/V106bNGp04KXb2/AyBH4wIEvvM1U324nEf9DBj37Yj6QuFeZOm9ovr42ro!/b/dL8AAAAAAAAA&bo=XwJfAl8CXwIRGS4!&rf=viewer_4&t=5";   <!-- 设置网站头像图片,可用QQ空间等上传获取地址 -->
  
          // Replace the title and subtitle if preferred (not required) ↓.
-         var title = "您正在向："+ myname + " 付款";
+         var title = "您正在向："+ myname + " 付款";     <!-- 提示语句,可自定义修改 -->
          var subtitle = "点击付款图标，扫一扫。完成付款！";
  
          // See if you would like to enable debug mode (as console.log). If debug mode is disabled, the console will be cleared.
@@ -105,3 +100,15 @@ Please DO NOT Remove Any Of The Copyright Information
      </body>
      
      </html>
+<!-- 
+HTML Template Merger - Merge your qrcode quicker.
+Released under GNU General Public License v3.0. Opensourced. (https://github.com/hifocus/merger)
+Author @hifocus (https://github.com/hifocus), @LF112 (https://github.com/lf112)
+Copyright reservation is required.
+
+HTML Templete Grouper - The Best Way To Share Your Chatting Group To The Public. 
+GitHub: [https:/github.com/hifocus/Grouper] , Released Under MIT Lisence 
+Original Version: [https://i.chainwon.com/946.html] 
+Modified By Huangxin [https://www.hxis.me] on Aug 29th 2018, great thanks to @Dreamer-Paul
+Please DO NOT Remove Any Of The Copyright Information
+ -->
