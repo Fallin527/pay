@@ -13,7 +13,7 @@ document.getElementById("i").style.background =
 // UserAgent Verify Part Starts
 var scale = window.devicePixelRatio; // Change to 1 on retina screens to see blurry canvas.
 
-document.getElementById("titleinfo").innerHTML = "松的便捷收款";
+document.getElementById("titleinfo").innerHTML = "凇凇的便捷收款";
 
 // General UserAgent verify rules
 if (navigator.userAgent.match(/Alipay/i)) {
