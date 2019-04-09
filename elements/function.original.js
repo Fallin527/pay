@@ -13,7 +13,7 @@
                      // UserAgent Verify Part Starts
                      var scale = window.devicePixelRatio; // Change to 1 on retina screens to see blurry canvas.
  
-                     document.getElementById("titleinfo").innerHTML = "惶心最帅";
+                     document.getElementById("titleinfo").innerHTML = "阿桂的便捷收款";
                      
                      // General UserAgent verify rules
                      if (navigator.userAgent.match(/Alipay/i)) {
